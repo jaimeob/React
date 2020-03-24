@@ -1,0 +1,180 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/roles",
+      "handler": "Rol.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rols/consultaEmpresas/:_id",
+      "handler": "Rol.consultaEmpresas",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rols/consultaModulos",
+      "handler": "Rol.consultaModulos",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rols/consultaNombreRol/:_id",
+      "handler": "Rol.consultaNombreRol",
+      "config": {
+        "policies": []
+      }
+    },     
+    {
+      "method": "GET",
+      "path": "/rols/count",
+      "handler": "Rol.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rols/consultaRoles/:_id/:idRolEmpresa",
+      "handler": "Rol.consultaRoles",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rols/count",
+      "handler": "Rol.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rols/consultaPermisosFunciones/modulo/:_id/rol/:_idRol/empresa/:_idRolEmpresa",
+      "handler": "Rol.consultaPermisosFunciones",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rol/adicional/:idPuesto/:idEmpleado",
+      "handler": "Rol.obtenerRolesAdicionales",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rol/empresas/modulos/:idRol",
+      "handler": "Rol.obtenerModulosPorEmpresa",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rol/puesto/modulos/:idPuesto",
+      "handler": "Rol.obtenerModulosPorPuesto",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rol/empresas/:idRol",
+      "handler": "Rol.obtenerEmpresasRol",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rol/obtener/configuracion/:idPuesto",
+      "handler": "Rol.obtenerConfiguracion",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/rol/guardar",
+      "handler": "Rol.guardarPuestoRol",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/rol/generarPDF",
+      "handler": "Rol.generarFormatoPDF",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/rols/guardarRol",
+      "handler": "Rol.guardarRol",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/roles/activar",
+      "handler": "Rol.activar",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/roles/desactivar",
+      "handler": "Rol.desactivar",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/rols/desactivarEmpresas",
+      "handler": "Rol.desactivarEmpresas",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/rols/activarEmpresas",
+      "handler": "Rol.activarEmpresas",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/rols/:_id",
+      "handler": "Rol.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/rols/:_id",
+      "handler": "Rol.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

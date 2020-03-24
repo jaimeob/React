@@ -1,0 +1,17 @@
+{
+  "connection": "default",
+  "collectionName": "comercial",
+  "info": {
+    "name": "comercial",
+    "description": "Incluye los modulos para el departamento de comercial"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "default": "",
+      "type": "integer"
+    }
+  }
+}

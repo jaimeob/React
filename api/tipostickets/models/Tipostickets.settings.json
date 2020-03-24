@@ -1,0 +1,38 @@
+{
+  "connection": "default",
+  "collectionName": "tipostickets",
+  "info": {
+    "name": "tipostickets",
+    "description": "Catalogo de tipos de configuracion de tickets"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "nombre": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "estatus": {
+      "default": false,
+      "type": "boolean",
+      "required": true
+    },
+    "descripcion": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "plantillaTickets": {
+      "collection": "plantillatickets",
+      "via": "tipostickets"
+    },
+    "idTipoTicket": {
+      "default": "",
+      "unique": true,
+      "type": "integer",
+      "required": true
+    }
+  }
+}

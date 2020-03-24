@@ -1,0 +1,158 @@
+{
+  "routes": [
+    
+    {
+      "method": "GET",
+      "path": "/formularios/asignaciones/usuario/:_idResponsable",
+      "handler": "Formularios.asignaciones",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/formularios/count",
+      "handler": "Formularios.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/formularios/asignaciones/:_id",
+      "handler": "Formularios.detalleAsignacion",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/formularios/tiposPreguntas",
+      "handler": "Formularios.obtenerTiposPreguntas",
+      "config": {
+        "policies": []
+      }
+    },
+
+    {
+      "method": "GET",
+      "path": "/formularios/obtenerDetalle/:_idFormulario",
+      "handler": "Formularios.obtenerDetalleFormulario",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/formularios/evaluacion/:_idAsignacion/usuario/:_idUsuario",
+      "handler": "Formularios.obtenerUsuariosEvaluar",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/formularios/:_idFormulario/usuario/:_idUsuario/asignacion/:_idAsignacion",
+      "handler": "Formularios.obtenerEstatusFormulario",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/formularios",
+      "handler": "Formularios.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/formularios",
+      "handler": "Formularios.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/formularios/validacion",
+      "handler": "Formularios.validarFormulario",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/formularios/asignacion",
+      "handler": "Formularios.createAsignacion",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/formularios/asignacion/update",
+      "handler": "Formularios.updateAsignacion",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/formularios/tipoFormulario",
+      "handler": "Formularios.obtenerFormulariosTipo",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/formularios/obtenerPreguntas",
+      "handler": "Formularios.obtenerPreguntasFormulario",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/formularios/guardarConfiguracionFormulario",
+      "handler": "Formularios.guardarConfiguracionFormulario",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/formularios/guardarRespuestasFormulario",
+      "handler": "Formularios.guardarRespuestasFormulario",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/formularios/eliminar",
+      "handler": "Formularios.eliminarFormulario",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/formularios/:_id",
+      "handler": "Formularios.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/formularios/:_id",
+      "handler": "Formularios.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "usuarioalmacen",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "UsuarioAlmacenID": {
+      "default": "",
+      "unique": true,
+      "type": "integer",
+      "required": true
+    }
+  }
+}

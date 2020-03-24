@@ -1,0 +1,76 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/empleados",
+      "handler": "Empleados.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/empleados/obtenerxdepa",
+      "handler": "Empleados.obtenerTodosPorDepartamento",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/empleados/count",
+      "handler": "Empleados.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/empleados/sinusuario",
+      "handler": "Empleados.obtenerEmpleadosSinUsuario",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/empleados/informacion/:idEmpleado",
+      "handler": "Empleados.obtenerEmpleadoInformacion",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/empleados/:_id",
+      "handler": "Empleados.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/empleados",
+      "handler": "Empleados.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/empleados/:_id",
+      "handler": "Empleados.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/empleados/:_id",
+      "handler": "Empleados.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

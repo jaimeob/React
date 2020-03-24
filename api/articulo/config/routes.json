@@ -1,0 +1,84 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/articulos",
+      "handler": "Articulo.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/articulos/count",
+      "handler": "Articulo.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/articulos/:_id",
+      "handler": "Articulo.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/agrupadores",
+      "handler": "Articulo.agrupadores",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/articulos/:_id/agrupador",
+      "handler": "Articulo.obtenerArticulosAgrupador",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/articulos/:_id/plaza/:_id2/existencia",
+      "handler": "Articulo.obtenerExistenciaArticulo",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/articulos",
+      "handler": "Articulo.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/articulos/eliminar/:_id",
+      "handler": "Articulo.eliminar",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/articulos/:_id",
+      "handler": "Articulo.actualizar",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/articulos/:_id",
+      "handler": "Articulo.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

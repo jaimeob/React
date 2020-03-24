@@ -1,0 +1,132 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/modulos",
+      "handler": "Modulo.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/modulos/consultaTipoAgrupador",
+      "handler": "Modulo.consultaTipoAgrupador",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/modulos/consultaUrl",
+      "handler": "Modulo.consultaUrl",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/modulos/consultaFunciones/:_id",
+      "handler": "Modulo.consultaFunciones",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/modulos/consultaNombreModulo/:_id",
+      "handler": "Modulo.consultaNombreModulo",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/modulos/count",
+      "handler": "Modulo.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/modulos/:_id",
+      "handler": "Modulo.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {      
+      "method": "POST",
+      "path": "/modulos/guardaModulo",
+      "handler": "Modulo.guardaModulo",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/modulos",
+      "handler": "Modulo.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {      
+      "method": "POST",
+      "path": "/modulos/cudModuloFuncion",
+      "handler": "Modulo.cudModuloFuncion",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/modulos/activar",
+      "handler": "Modulo.activar",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/modulos/desactivar",
+      "handler": "Modulo.desactivar",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/modulos/desactivarFunciones",
+      "handler": "Modulo.desactivarFunciones",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/modulos/activarFunciones",
+      "handler": "Modulo.activarFunciones",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/modulos/:_id",
+      "handler": "Modulo.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/modulos/:_id",
+      "handler": "Modulo.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

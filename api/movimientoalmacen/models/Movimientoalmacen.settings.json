@@ -1,0 +1,19 @@
+{
+  "connection": "default",
+  "collectionName": "MovimientoAlmacen",
+  "info": {
+    "name": "movimientoalmacen",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "IdMovimientoAlmacen": {
+      "default": "",
+      "unique": true,
+      "type": "integer",
+      "required": true
+    }
+  }
+}

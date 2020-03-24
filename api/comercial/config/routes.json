@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/comercials",
+      "handler": "Comercial.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/comercials/count",
+      "handler": "Comercial.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/comercials/:_id",
+      "handler": "Comercial.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/comercials",
+      "handler": "Comercial.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/comercials/:_id",
+      "handler": "Comercial.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/comercials/:_id",
+      "handler": "Comercial.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

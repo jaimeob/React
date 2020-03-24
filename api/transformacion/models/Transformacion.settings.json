@@ -1,0 +1,19 @@
+{
+  "connection": "default",
+  "collectionName": "Transformacion",
+  "info": {
+    "name": "transformacion",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "IdTransformacion": {
+      "default": "",
+      "unique": true,
+      "type": "integer",
+      "required": true
+    }
+  }
+}

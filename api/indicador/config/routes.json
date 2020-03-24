@@ -1,0 +1,675 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/indicadors",
+      "handler": "Indicador.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/indicadors/consultaConfiguracionBono/:id",
+      "handler": "Indicador.consultaConfiguracionBono",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/indicadors/consultaPuestosConfiguracionBono/:id",
+      "handler": "Indicador.consultaPuestosConfiguracionBono",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/indicadors/consultaIndicadores",
+      "handler": "Indicador.consultaIndicadores",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/indicadors/consultaExisteNombre/:nombre",
+      "handler": "Indicador.consultaExisteNombre",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/indicadors/consultaExisteNombreGrupo/:nombre",
+      "handler": "Indicador.consultaExisteNombreGrupo",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/indicadors/consultaEntregaIndicadores",
+      "handler": "Indicador.consultaEntregaIndicadores",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/indicadors/consultaValoresEtiquetas",
+      "handler": "Indicador.consultaValoresEtiquetas",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/indicadors/consultaDepartamentoDireccionPlazaPuestoRechum",
+      "handler": "Indicador.consultaDepartamentoDireccionPlazaPuestoRechum",
+      "config": {
+        "policies": []
+      }
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+      "method": "GET",
+      "path": "/indicadors/count",
+      "handler": "Indicador.count",
+      "config": {
+        "policies": []
+      }
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+      "method": "GET",
+      "path": "/indicadors/:_id",
+      "handler": "Indicador.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+      "method": "GET",
+      "path": "/indicadors/consultaConfiguracionBono",
+      "handler": "Indicador.consultaConfiguracionBono",
+      "config": {
+        "policies": []
+      }
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+      "method": "GET",
+      "path": "/indicadores/obtenerPeriodos",
+      "handler": "Indicador.obtenerListadoPeriodos",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/indicadores/editar-periodo/:idPeriodo",
+      "handler": "Indicador.editarPeriodo",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/indicadores/consultar-anio-periodo/:id/anio/:anioPeriodo",
+      "handler": "Indicador.consultarAnioPeriodo",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/indicadores/obtenerPuestoTotalIndicadores",
+      "handler": "Indicador.obtenerPuestoTotalIndicadores",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/indicadores/obtenerPesoTotalIndicadores/departamento/:idDepartamento/puesto/:idPuesto/indicador-detalle/:idIndicadorDetalle",
+      "handler": "Indicador.obtenerPesoTotalIndicadores",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/indicadores/obtenerCombos",
+      "handler": "Indicador.obtenerCombos",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/indicadores/obtenerPuestosPorDepartamento/:idDepartamento",
+      "handler": "Indicador.obtenerPuestosPorDepartamento",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/indicadores/obtenerDependenciasPorModulo/:idModulo",
+      "handler": "Indicador.obtenerDependenciasPorModulo",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/indicadores/obtener-descripcion-indicador/:idIndicador",
+      "handler": "Indicador.obtenerDescripcionIndicador",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/indicadores/obtenerIndicadoresDepartamentoPuesto/departamento/:idDepartamento/puesto/:idPuesto/estatus/:estatus",
+      "handler": "Indicador.obtenerIndicadoresDepartamentoPuesto",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/indicadores/obtenerDetalleIndicador/:idIndicador/departamento/:idDepartamento/puesto/:idPuesto",
+      "handler": "Indicador.obtenerDetalleIndicador",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/indicadores/obtener-ebitdas/:estatus",
+      "handler": "Indicador.obtenerListadoEbitdas",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/indicadores/consultar-anio-ebitda/:id/anio/:anioEbitda",
+      "handler": "Indicador.consultarAnioEbitda",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/indicadores/editar-ebitda/:idEbitda",
+      "handler": "Indicador.editarEbitda",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/indicadores/obtener-jerarquias/",
+      "handler": "Indicador.obtenerJerarquias",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/indicadores/obtener-jerarquias/:idJerarquia",
+      "handler": "Indicador.editarJerarquias",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/indicadores/obtener-departamentos-y-puestos/",
+      "handler": "Indicador.obtenerDepartamentosPuestos",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/indicadores/obtener-nombre-jerarquia/:idJerarquia/nombre/:nombre",
+      "handler": "Indicador.obtenerNombreJerarquia",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/indicadores/cerrar-periodo",
+      "handler": "Indicador.cerrarPeriodo",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/indicadores/guardar-periodo",
+      "handler": "Indicador.guardarPeriodo",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/indicadores/guardar-configuracion-indicador",
+      "handler": "Indicador.guardarConfiguracionIndicador",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/indicadores/activarDesactivarIndicador",
+      "handler": "Indicador.activarDesactivarIndicador",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/indicadores/guardar-ebitda",
+      "handler": "Indicador.guardarEbitda",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/indicadores/actualizar-estatus-jerarquia",
+      "handler": "Indicador.actualizarEstatusJerarquia",
+      "config": {
+        "policies": []
+      }
+    },
+
+
+
+
+
+
+
+
+    {
+      "method": "POST",
+      "path": "/indicadors/guardaIndicadores",
+      "handler": "Indicador.guardaIndicadores",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/indicadors",
+      "handler": "Indicador.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/indicadores/registrar-jerarquia/",
+      "handler": "Indicador.guardarJerarquia",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/indicadors/guardaConfiguracionBono",
+      "handler": "Indicador.guardaConfiguracionBono",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/indicadors/guardaEntregaIndicador",
+      "handler": "Indicador.guardaEntregaIndicador",
+      "config": {
+        "policies": []
+      }
+    },
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+      "method": "PUT",
+      "path": "/indicadors/:_id",
+      "handler": "Indicador.update",
+      "config": {
+        "policies": []
+      }
+    },
+
+    {
+      "method": "PUT",
+      "path": "/indicadors/desactivaActivaIndicador/idIndicador/:idIndicador/usuario/:idUsuario/activo/:Activo",
+      "handler": "Indicador.desactivaActivaIndicador",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/indicadores/actualizar-estatus-ebitda/",
+      "handler": "Indicador.actualizarEstatusEbitda",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/indicadors/activarDesactivarConfiguracionBono/idConfiguracionBono/:idConfiguracionBono/usuario/:idUsuario/activo/:Activo",
+      "handler": "Indicador.activarDesactivarConfiguracionBono",
+      "config": {
+        "policies": []
+      }
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+      "method": "DELETE",
+      "path": "/indicadors/:_id",
+      "handler": "Indicador.destroy",
+      "config": {
+        "policies": []
+      }
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+      "method": "GET",
+      "path": "/indicadores/resultados/:idUsuario/:idPeriodo",
+      "handler": "Indicador.indicadoresPorUsuario",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/indicadores/parametros",
+      "handler": "Indicador.obtenerParametrosReporte",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/indicadores/reporte/direccion",
+      "handler": "Indicador.obtenerReporteDireccion",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/indicadores/resultados",
+      "handler": "Indicador.guardarResultados",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/indicadores/historial/:idUsuario",
+      "handler": "Indicador.obtenerHistorialIndicador",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/indicadores/autorizar",
+      "handler": "Indicador.autorizarIndicador",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/indicadores/puestos/empleados/:idPuesto",
+      "handler": "Indicador.obtenerPuestoEmpleados",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/indicadores/archivos/cambio/:idBitacoraCambio",
+      "handler": "Indicador.obtenerArchivosCambio",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/indicadores/grupo",
+      "handler": "Indicador.obtenerGrupos",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

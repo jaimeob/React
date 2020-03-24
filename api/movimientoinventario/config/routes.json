@@ -1,0 +1,60 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/movimientoinventarios",
+      "handler": "Movimientoinventario.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/movimientoinventarios/count",
+      "handler": "Movimientoinventario.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/movimiento/detalle/:_id",
+      "handler": "Movimientoinventario.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/reportes/:_id",
+      "handler": "Movimientoinventario.reportes",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/movimientoinventarios",
+      "handler": "Movimientoinventario.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/movimientoinventarios/:_id",
+      "handler": "Movimientoinventario.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/movimientoinventarios/:_id",
+      "handler": "Movimientoinventario.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

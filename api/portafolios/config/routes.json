@@ -1,0 +1,53 @@
+{
+    "routes": [
+      {
+        "method": "GET",
+        "path": "/portafolios/obtenerPortafolios/:_idUser",
+        "handler": "Portafolios.obtenerPortafolios",
+        "config": {
+          "policies": []
+        }
+      },
+      {
+        "method": "POST",
+        "path": "/pedidos/obtener",
+        "handler": "Pedidos.obtenerPedidos",
+        "config": {
+          "policies": []
+        }
+      },
+      {
+        "method": "POST",
+        "path": "/pedidos/autorizar",
+        "handler": "Pedidos.autorizarPedido",
+        "config": {
+          "policies": []
+        }
+      },
+      {
+        "method": "POST",
+        "path": "/portafolios",
+        "handler": "Portafolios.create",
+        "config": {
+          "policies": []
+        }
+      },
+      {
+        "method": "PUT",
+        "path": "/pedidos/:_id",
+        "handler": "Pedidos.update",
+        "config": {
+          "policies": []
+        }
+      },
+      {
+        "method": "DELETE",
+        "path": "/pedidos/:_id",
+        "handler": "Pedidos.destroy",
+        "config": {
+          "policies": []
+        }
+      }
+    ]
+  }
+  

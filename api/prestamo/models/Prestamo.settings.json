@@ -1,0 +1,19 @@
+{
+  "connection": "default",
+  "collectionName": "Prestamo",
+  "info": {
+    "name": "prestamo",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "PrestamoId": {
+      "default": "",
+      "unique": true,
+      "type": "integer",
+      "required": true
+    }
+  }
+}

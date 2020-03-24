@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/ticketsarchivos",
+      "handler": "Ticketsarchivos.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ticketsarchivos/count",
+      "handler": "Ticketsarchivos.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ticketsarchivos/:_id",
+      "handler": "Ticketsarchivos.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/ticketsarchivos",
+      "handler": "Ticketsarchivos.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/ticketsarchivos/:_id",
+      "handler": "Ticketsarchivos.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/ticketsarchivos/:_id",
+      "handler": "Ticketsarchivos.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/movimientoalmacenes",
+      "handler": "Movimientoalmacen.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/moldes/ubicacion",
+      "handler": "Movimientoalmacen.moldes",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/movimientoalmacens/:_id",
+      "handler": "Movimientoalmacen.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/obtenerMovimientos",
+      "handler": "Movimientoalmacen.obtenerMovimientos",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ubicaciones",
+      "handler": "Movimientoalmacen.ubicaciones",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/movimientoalmacens/count",
+      "handler": "Movimientoalmacen.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/movimientoalmacens/plaza/:_id/molde/:_id2/ubicacion/:_id3/insumos/:_id4",
+      "handler": "Movimientoalmacen.insumos",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/movimientoalmacens",
+      "handler": "Movimientoalmacen.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/plazas/usuario",
+      "handler": "Movimientoalmacen.plazasUsuario",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/almacenes/usuario",
+      "handler": "Movimientoalmacen.almacenesUsuario",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/movimientoalmacens/:_id",
+      "handler": "Movimientoalmacen.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/movimientoalmacenes/eliminar/:_id",
+      "handler": "Movimientoalmacen.eliminar",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/movimientoalmacens/:_id",
+      "handler": "Movimientoalmacen.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

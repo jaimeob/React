@@ -1,0 +1,84 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/plantillaformularios",
+      "handler": "Plantillaformulario.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/plantillaformularios/count",
+      "handler": "Plantillaformulario.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/plantillaformularios/:_id",
+      "handler": "Plantillaformulario.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/plantillaformularios",
+      "handler": "Plantillaformulario.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/plantillaformularios",
+      "handler": "Plantillaformulario.actualizarEstatus",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/plantillaformularios/:_id",
+      "handler": "Plantillaformulario.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/plantillaformularios/:_id",
+      "handler": "Plantillaformulario.destroy",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/plantillaformularios/obtenerplantillasform/:estatus",
+      "handler": "Plantillaformulario.ObtenerPlantillasFormularios",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/plantillaformularios/validanombreplantillaform/:nombre",
+      "handler": "Plantillaformulario.ValidarNombrePlantillaFormulario",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/plantillaformularios/obtenerplantillasformulariosDepa/:estatus/:_id",
+      "handler": "Plantillaformulario.obtenerPlantillasFormDeptos",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

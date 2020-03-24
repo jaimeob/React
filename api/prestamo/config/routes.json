@@ -1,0 +1,84 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/prestamos",
+      "handler": "Prestamo.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/prestamos/count",
+      "handler": "Prestamo.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/prestamos/:_id/detalle",
+      "handler": "Prestamo.prestamoDetalle",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/prestamos/:_id",
+      "handler": "Prestamo.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/prestamos",
+      "handler": "Prestamo.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/prestamos/existencia",
+      "handler": "Prestamo.existenciaPrestamos",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/insumos/prestamos",
+      "handler": "Prestamo.insumos",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/prestamos/devolver",
+      "handler": "Prestamo.devolver",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/prestamos/:_id",
+      "handler": "Prestamo.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/prestamos/:_id",
+      "handler": "Prestamo.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

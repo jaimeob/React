@@ -1,0 +1,33 @@
+{
+  "connection": "default",
+  "collectionName": "Indicadores",
+  "info": {
+    "name": "indicador",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "ConfiguracionBonoId": {
+      "default": "",
+      "type": "integer"
+    },
+    "Grupo": {
+      "default": "",
+      "type": "string"
+    },
+    "Dias": {
+      "default": "",
+      "type": "integer"
+    },
+    "TotalPuestos": {
+      "default": "",
+      "type": "integer"
+    },
+    "Activo": {
+      "default": false,
+      "type": "boolean"
+    }
+  }
+}

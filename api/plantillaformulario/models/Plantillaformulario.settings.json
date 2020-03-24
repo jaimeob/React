@@ -1,0 +1,42 @@
+{
+  "connection": "default",
+  "collectionName": "PlantillasFormularios",
+  "info": {
+    "name": "plantillaformulario",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "nombreFormulario": {
+      "default": "",
+      "maxLength": 150,
+      "unique": true,
+      "minLength": 1,
+      "type": "string",
+      "required": true
+    },
+    "departamentos": {
+      "collection": "departamentos",
+      "dominant": true,
+      "via": "plantillaformularios"
+    },
+    "estatus": {
+      "default": true,
+      "type": "boolean",
+      "required": true
+    },
+    "publicado": {
+      "default": false,
+      "type": "boolean",
+      "required": true
+    },
+    "rutaLogo": {
+      "default": "",
+      "maxLength": 500,
+      "minLength": 1,
+      "type": "string"
+    }
+  }
+}

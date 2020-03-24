@@ -1,0 +1,29 @@
+{
+  "connection": "default",
+  "collectionName": "Roles",
+  "info": {
+    "name": "rol",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "RolId": {
+      "default": "",
+      "type": "integer"
+    },
+    "NombreRol": {
+      "default": "",
+      "type": "string"
+    },
+    "Descripcion": {
+      "default": "",
+      "type": "text"
+    },
+    "Activo": {
+      "default": "",
+      "type": "integer"
+    }
+  }
+}

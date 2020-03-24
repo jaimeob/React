@@ -1,0 +1,357 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/tickets",
+      "handler": "Tickets.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tickets/cambiarEstatus",
+      "handler": "tickets.cambiarEstatus",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tickets/autorizarTicket",
+      "handler": "tickets.autorizarTicket",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/plazas",
+      "handler": "Tickets.obtenerPlazas",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/todasPlazas",
+      "handler": "Tickets.obtenerTodasPlazas",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rolesPuestos",
+      "handler": "Tickets.obtenerRoles",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/obtenerEtapasPorPlaza/:_id/:plantillaId",
+      "handler": "Tickets.obtenerEtapasPorPlaza",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/usuariosPlaza/:_id",
+      "handler": "Tickets.obtenerUsuariosPlaza",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tickets/count",
+      "handler": "Tickets.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tickets/obtenerPrioridades",
+      "handler": "Tickets.obtenerPrioridades",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tickets/obtenerEstatusTicketsEtapas/:_id",
+      "handler": "Tickets.obtenerEstatusTicketsEtapas",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tickets/comentarios/:_id",
+      "handler": "Tickets.obtenerComentarios",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tickets/obtenerTicketEspecifico/:_id",
+      "handler": "Tickets.obtenerTicketEspecifico",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/difusiones/:_id/:EmpleadoId",
+      "handler": "Tickets.obtenerDifusiones",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tickets/notificaciones/:_id",
+      "handler": "Tickets.obtenerNotificaciones",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/obtenerDifusionSeleccionada/:_id",
+      "handler": "Tickets.obtenerDifusionSeleccionada",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tickets/departamentos/:idDepartamento",
+      "handler": "Tickets.obtenerTicketsPorDepartamento",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tickets/obtenerEmpleados/:_id",
+      "handler": "Tickets.obtenerEmpleados",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tickets/imagenUrl/:_id",
+      "handler": "Tickets.obtenerImagenUrl",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tickets/:idTicket",
+      "handler": "Tickets.obtenerTicket",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tickets/:_id/:idEmpleado",
+      "handler": "Tickets.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tickets/estatusEnviar/:_id",
+      "handler": "Tickets.estatusEnviar",
+      "config": {
+        "policies": []
+      }
+    },
+ 
+    {
+      "method": "GET",
+      "path": "/tickets/obtenerFecha",
+      "handler": "tickets.obtenerFecha",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tickets",
+      "handler": "Tickets.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/obtenerTicketsPorEmpleado",
+      "handler": "Tickets.obtenerTicketsPorEmpleado",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tickets/obtenerRelacion",
+      "handler": "Tickets.obtenerRelacion",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tickets/obtenerPlazasUsuario",
+      "handler": "Tickets.obtenerPlazasUsuario",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/tickets/:_id",
+      "handler": "Tickets.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/tickets/asignar/:idTicket",
+      "handler": "Tickets.asignarUsuario",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/tickets/:_id",
+      "handler": "Tickets.destroy",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tickets/inscomentarios",
+      "handler": "Tickets.insertarComentarios",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tickets/insdifusiones",
+      "handler": "Tickets.insertarDifusiones",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tickets/cambiarEstatusDifusion",
+      "handler": "Tickets.cambiarEstatusDifusion",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tickets/cambiarEstatusNotificaciones",
+      "handler": "Tickets.cambiarEstatusNotificaciones",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tickets/datosIndicadoresDesempenioOCKyOE",
+      "handler": "Tickets.datosIndicadoresDesempenioOCKyOE",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tickets/datosGraficaDesempenioPuesto",
+      "handler": "Tickets.datosGraficaDesempenioPuesto",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tickets/datosGraficaDesempenioProceso",
+      "handler": "Tickets.datosGraficaDesempenioProceso",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tickets/datosCombosIndicadores",
+      "handler": "Tickets.datosCombosIndicadores",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tickets/obtenerCatalogos",
+      "handler": "Tickets.obtenerCatalogos",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tickets/obtenerItemsCatalogos",
+      "handler": "Tickets.obtenerItemsCatalogos",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tickets/obtenerItemsCatalogos2",
+      "handler": "Tickets.obtenerItemsCatalogos2",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tickets/send",
+      "handler": "tickets.send",
+      "config": {
+        "policies": []
+      },
+      "tag": {
+        "plugin": "upload",
+        "name": "File"
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tickets/guardarEtapa",
+      "handler": "tickets.guardarEtapa",
+      "config": {
+        "policies": []
+      },
+      "tag": {
+        "plugin": "upload",
+        "name": "File"
+      }
+    }
+  ]
+}

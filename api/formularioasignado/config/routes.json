@@ -1,0 +1,84 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/formularioasignados",
+      "handler": "Formularioasignado.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/formularioasignados/count",
+      "handler": "Formularioasignado.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/formularioasignados/conestatus",
+      "handler": "Formularioasignado.obtenerFormulariosConEstatus",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/formularioasignados/listarporempleado/:NoEmpleado",
+      "handler": "Formularioasignado.listarPorEmpleado",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/formularioasignados/:_id",
+      "handler": "Formularioasignado.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/formularioasignados",
+      "handler": "Formularioasignado.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/formularioasignados/actualizar/:FormularioId",
+      "handler": "Formularioasignado.actualizarComponentesFormularios",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/formularioasignados/updtestatusfrms/:estatus",
+      "handler": "Formularioasignado.asignarEstatusFormularios",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/formularioasignados/:_id",
+      "handler": "Formularioasignado.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/formularioasignados/:_id",
+      "handler": "Formularioasignado.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

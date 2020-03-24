@@ -1,0 +1,40 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "tickets",
+    "description": "Catalogo de tickets de generados."
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "nombre": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "empleadoEnvia": {
+      "model": "empleados",
+      "via": "ticketsEnvio"
+    },
+    "empleadoAtiende": {
+      "model": "empleados",
+      "via": "ticketAtiende"
+    },
+    "departamentos": {
+      "model": "departamentos",
+      "via": "tickets"
+    },
+    "estatus": {
+      "default": false,
+      "type": "boolean",
+      "required": true
+    },
+    "plantilla": {
+      "default": "",
+      "type": "json",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/tipostickets",
+      "handler": "Tipostickets.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tipostickets/count",
+      "handler": "Tipostickets.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tipostickets/:_id",
+      "handler": "Tipostickets.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tipostickets",
+      "handler": "Tipostickets.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/tipostickets/:_id",
+      "handler": "Tipostickets.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/tipostickets/:_id",
+      "handler": "Tipostickets.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

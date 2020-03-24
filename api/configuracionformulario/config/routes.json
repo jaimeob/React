@@ -1,0 +1,84 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/configuracionformularios",
+      "handler": "Configuracionformulario.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/configuracionformularios/todos",
+      "handler": "Configuracionformulario.obtenertodos",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/configuracionformularios/count",
+      "handler": "Configuracionformulario.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/configuracionformularios/:_id",
+      "handler": "Configuracionformulario.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/configuracionformularios",
+      "handler": "Configuracionformulario.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/configuracionformularios/desactivar/:_id",
+      "handler": "Configuracionformulario.deactivate",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/configuracionformularios/activar/:_id",
+      "handler": "Configuracionformulario.activate",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/configuracionformularios/publicar/:_id",
+      "handler": "Configuracionformulario.publishFormulario",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/configuracionformularios/:_id",
+      "handler": "Configuracionformulario.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/configuracionformularios/:_id",
+      "handler": "Configuracionformulario.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

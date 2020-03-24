@@ -1,0 +1,52 @@
+{
+  "connection": "default",
+  "collectionName": "tiposcomponentes",
+  "info": {
+    "name": "tiposcomponente",
+    "description": "Gestiona los tipos de componentes configurables disponibles"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "nombre": {
+      "default": "",
+      "maxLength": 100,
+      "type": "string",
+      "required": true
+    },
+    "tipo": {
+      "default": "",
+      "maxLength": 100,
+      "type": "string",
+      "required": true
+    },
+    "icon": {
+      "default": "error_outline",
+      "type": "string",
+      "required": true
+    },
+    "plataforma": {
+      "default": "web",
+      "type": "enumeration",
+      "required": true,
+      "enum": [
+        "escritorio",
+        "web",
+        "movil (IOS)",
+        "movil (Android)"
+      ]
+    },
+    "activo": {
+      "default": true,
+      "type": "boolean",
+      "required": true
+    },
+    "proyecto": {
+      "collection": "proyecto",
+      "dominant": true,
+      "via": "tiposcomponentes",
+      "private": true
+    }
+  }
+}

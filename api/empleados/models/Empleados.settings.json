@@ -1,0 +1,73 @@
+{
+  "connection": "default",
+  "collectionName": "empleados",
+  "info": {
+    "name": "empleados",
+    "description": "Catalogo de Empleados"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "noEmpleado": {
+      "default": "",
+      "unique": true,
+      "type": "integer",
+      "required": true
+    },
+    "nombre": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "apellidoPaterno": {
+      "default": "",
+      "type": "string"
+    },
+    "apellidoMaterno": {
+      "default": "",
+      "type": "string"
+    },
+    "puestos": {
+      "model": "puestos",
+      "via": "empleados"
+    },
+    "estatus": {
+      "default": false,
+      "type": "boolean",
+      "required": true
+    },
+    "fechaBaja": {
+      "default": "",
+      "type": "date"
+    },
+    "fechaAlta": {
+      "default": "",
+      "type": "date"
+    },
+    "correo": {
+      "default": "",
+      "type": "email"
+    },
+    "periodo": {
+      "default": "",
+      "type": "integer"
+    },
+    "plantillaTickets": {
+      "collection": "plantillatickets",
+      "via": "empleados"
+    },
+    "departamentos": {
+      "model": "departamentos",
+      "via": "empleados"
+    },
+    "ticketsEnvio": {
+      "model": "tickets",
+      "via": "empleadoEnvia"
+    },
+    "ticketAtiende": {
+      "model": "tickets",
+      "via": "empleadoAtiende"
+    }
+  }
+}

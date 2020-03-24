@@ -1,0 +1,37 @@
+{
+  "connection": "default",
+  "collectionName": "Usuarios",
+  "info": {
+    "name": "usuario",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "UsuarioId": {
+      "default": "",
+      "type": "integer"
+    },
+    "UsuarioDominio": {
+      "default": "",
+      "type": "string"
+    },
+    "Correo": {
+      "default": "",
+      "type": "email"
+    },
+    "Nombre": {
+      "default": "",
+      "type": "string"
+    },
+    "NoEmpleado": {
+      "default": "",
+      "type": "integer"
+    },
+    "Activo": {
+      "default": "",
+      "type": "integer"
+    }
+  }
+}

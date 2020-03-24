@@ -1,0 +1,100 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/pedidos/estatus",
+      "handler": "Pedidos.obtenerEstatus",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pedidos/plazas",
+      "handler": "Pedidos.obtenerPlazasDos",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pedidos/agrupadores/:_id/articulos/",
+      "handler": "Pedidos.obtenerArticulos",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pedidos/:idPedido/:plaza",
+      "handler": "Pedidos.obtenerDetalle",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/pedidos/obtener",
+      "handler": "Pedidos.obtenerPedidos",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/pedidos/autorizar",
+      "handler": "Pedidos.autorizarPedido",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/pedidos/reporte",
+      "handler": "Pedidos.obtenerReportePedido",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/pedidos/reporte/coorporativo",
+      "handler": "Pedidos.obtenerReporte",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/pedidos/recibir",
+      "handler": "Pedidos.recibirPedido",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/pedidos",
+      "handler": "Pedidos.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/pedidos/:_id",
+      "handler": "Pedidos.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/pedidos/:_id",
+      "handler": "Pedidos.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

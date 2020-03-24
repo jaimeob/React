@@ -1,0 +1,84 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/usuarioalmacens",
+      "handler": "Usuarioalmacen.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/almacenesPlazas",
+      "handler": "Usuarioalmacen.almacenPlaza",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/usuarioAlmacenes",
+      "handler": "Usuarioalmacen.usuarioAlmacenes",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/almacenes/:_id",
+      "handler": "Usuarioalmacen.almacenes",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/usuarioalmacens/count",
+      "handler": "Usuarioalmacen.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/usuarioalmacens/:_id",
+      "handler": "Usuarioalmacen.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/usuarioalmacens",
+      "handler": "Usuarioalmacen.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/usuarioalmacen",
+      "handler": "Usuarioalmacen.usuarioAlmacen",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/usuarioalmacens/:_id",
+      "handler": "Usuarioalmacen.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/usuarioalmacens/:_id",
+      "handler": "Usuarioalmacen.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

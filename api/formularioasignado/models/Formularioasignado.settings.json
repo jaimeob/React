@@ -1,0 +1,71 @@
+{
+  "connection": "default",
+  "collectionName": "formulariosasignados",
+  "info": {
+    "name": "formularioasignado",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "formularioId": {
+      "default": "",
+      "type": "integer"
+    },
+    "nombre": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "noEmpleado": {
+      "default": "",
+      "type": "integer",
+      "required": true
+    },
+    "noEmpleadoAsigna": {
+      "default": "",
+      "type": "integer",
+      "required": true
+    },
+    "idDepartamento": {
+      "default": "",
+      "type": "integer",
+      "required": true
+    },
+    "idConfigFormulario": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "componentes": {
+      "default": "",
+      "type": "json",
+      "required": true
+    },
+    "fechaAsignacion": {
+      "default": "",
+      "type": "date"
+    },
+    "fechaRealizacion": {
+      "default": "",
+      "type": "date"
+    },
+    "fechaFinalizacion": {
+      "default": "",
+      "type": "date"
+    },
+    "rutaLogo": {
+      "default": "",
+      "type": "text"
+    },
+    "enUso": {
+      "default": false,
+      "type": "boolean"
+    },
+    "activo": {
+      "default": true,
+      "type": "boolean"
+    }
+  }
+}

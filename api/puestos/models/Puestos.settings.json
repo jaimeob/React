@@ -1,0 +1,37 @@
+{
+  "connection": "default",
+  "collectionName": "puestos",
+  "info": {
+    "name": "puestos",
+    "description": "Catalogos de Puestos"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "puestoId": {
+      "default": "",
+      "unique": true,
+      "type": "integer",
+      "required": true
+    },
+    "departamentos": {
+      "model": "departamentos",
+      "via": "puestos"
+    },
+    "nombre": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "estatus": {
+      "default": false,
+      "type": "boolean",
+      "required": true
+    },
+    "empleados": {
+      "collection": "empleados",
+      "via": "puestos"
+    }
+  }
+}

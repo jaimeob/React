@@ -1,0 +1,142 @@
+{
+  "connection": "default",
+  "collectionName": "componentesformularios",
+  "info": {
+    "name": "componentesformulario",
+    "description": "Gestiona la configuración de componentes que va a tener cada formulario."
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "nomCampo": {
+      "default": "",
+      "maxLength": 100,
+      "type": "string",
+      "required": true
+    },
+    "label": {
+      "default": "",
+      "type": "string"
+    },
+    "dataType": {
+      "default": "",
+      "type": "enumeration",
+      "enum": [
+        "alphanumeric",
+        "text",
+        "label",
+        "number",
+        "dropdown",
+        "boolean",
+        "file",
+        "table",
+        ""
+      ]
+    },
+    "textAlign": {
+      "default": "",
+      "type": "enumeration",
+      "enum": [
+        "left",
+        "center",
+        "right",
+        ""
+      ]
+    },
+    "placeholder": {
+      "default": "",
+      "maxLength": 50,
+      "type": "string"
+    },
+    "valor": {
+      "default": "",
+      "type": "text"
+    },
+    "requerido": {
+      "default": false,
+      "type": "boolean"
+    },
+    "longitudMinima": {
+      "default": "",
+      "maxLength": 20,
+      "type": "string"
+    },
+    "longitudMaxima": {
+      "default": "",
+      "maxLength": 50,
+      "type": "string"
+    },
+    "icon": {
+      "default": "",
+      "maxLength": 100,
+      "type": "string"
+    },
+    "configured": {
+      "default": true,
+      "type": "boolean"
+    },
+    "optionsText": {
+      "default": "",
+      "maxLength": 100,
+      "type": "string"
+    },
+    "increment": {
+      "default": 0,
+      "type": "integer"
+    },
+    "tableCols": {
+      "default": "",
+      "type": "json"
+    },
+    "tableRows": {
+      "default": "",
+      "type": "json"
+    },
+    "options": {
+      "default": "",
+      "type": "json"
+    },
+    "files": {
+      "default": "",
+      "type": "json"
+    },
+    "fileType": {
+      "default": "",
+      "maxLength": 20,
+      "type": "string"
+    },
+    "fileSize": {
+      "default": "",
+      "maxLength": 20,
+      "type": "string"
+    },
+    "fileLimit": {
+      "default": 1,
+      "type": "integer"
+    },
+    "order": {
+      "default": 0,
+      "type": "integer"
+    },
+    "configuracionformulario": {
+      "model": "configuracionformulario",
+      "via": "componentesformularios"
+    },
+    "tipo": {
+      "default": "",
+      "type": "enumeration",
+      "enum": [
+        "textocorto",
+        "textolargo",
+        "etiqueta",
+        "dropdown",
+        "seleccion",
+        "multiseleccion",
+        "tabla",
+        "archivo",
+        ""
+      ]
+    }
+  }
+}

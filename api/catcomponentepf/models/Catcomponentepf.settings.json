@@ -1,0 +1,27 @@
+{
+  "connection": "default",
+  "collectionName": "CatComponentesPF",
+  "info": {
+    "name": "catcomponentepf",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "componenteId": {
+      "default": "",
+      "unique": true,
+      "min": 1,
+      "type": "integer",
+      "required": true
+    },
+    "nombreComponente": {
+      "default": "",
+      "maxLength": 100,
+      "minLength": 1,
+      "type": "string",
+      "required": true
+    }
+  }
+}

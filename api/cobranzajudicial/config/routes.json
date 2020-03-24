@@ -1,0 +1,236 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/cobranzajudicial",
+      "handler": "Cobranzajudicial.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/cobranzajudicial/obtenerTipoProcesoJudicial",
+      "handler": "Cobranzajudicial.ObtenerTipoProcesoJudicial",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/cobranzajudicial/obtenerSemMesRetail",
+      "handler": "Cobranzajudicial.obtenerSemMesRetail",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/cobranzajudicial/obtenerSemMesRetail/empresa/:companySelected/tipomovimiento/:tipoMovto/asignacion/:asignacion",
+      "handler": "Cobranzajudicial.obtenerSemMesRetail",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/cobranzajudicial/ObtenerFechaRetail",
+      "handler": "Cobranzajudicial.obtenerFechaRetail",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/cobranzajudicial/obtenerListadoEtapasCobranzaJudicial/:procesoId/:estatus",
+      "handler": "Cobranzajudicial.ObtenerListadoEtapasCobranzaJudicial",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/cobranzajudicial/obtenerComboEtapasCobranzaJudicial/:procesoId/:tipoMovto",
+      "handler": "Cobranzajudicial.ObtenerComboEtapasCobranzaJudicial",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/cobranzajudicial/obtenerEmpresasCobranzaJudicial",
+      "handler": "Cobranzajudicial.obtenerEmpresasCobranzaJudicial",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/cobranzajudicial/obtenerListadoAsignaAbogado/:anioRetail/:empresaId/:periodoId",
+      "handler": "Cobranzajudicial.ObtenerListadoAsignaAbogado",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/cobranzajudicial/obtenerAbogadosLitigantes",
+      "handler": "Cobranzajudicial.ObtenerAbogadosLitigantes",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/cobranzajudicial/obtenerTiposCartera",
+      "handler": "Cobranzajudicial.ObtenerTiposCartera",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/cobranzajudicial/obtenerEmpresasLayout/:empresaId",
+      "handler": "Cobranzajudicial.ObtenerEmpresasLayout",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/cobranzajudicial/empresa/:empresaId/listado-mes/:mesRetail",
+      "handler": "Cobranzajudicial.ObtenerListadoMes",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/cobranzajudicial/excel/base-cobranza/:baseCobranzaId/empresa/:empresaId",
+      "handler": "Cobranzajudicial.ObtenerExcel",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/cobranzajudicial/obtenerLayoutAsignacion/:empresaId",
+      "handler": "Cobranzajudicial.ObtenerLayoutAsignacion",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/cobranzajudicial/consultaSeguimientoAbogado/empresa/:idEmpresa/usuario/:idUsuario",
+      "handler": "Cobranzajudicial.consultaSeguimientoAbogado",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/cobranzajudicial/consultaEtapasSeguimientoAbogado/empresa/:idEmpresa/cliente/:idCliente",
+      "handler": "Cobranzajudicial.consultaEtapasSeguimientoAbogado",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/cobranzajudicial/:idCliente/empresa/:idEmpresa/contar-archivos",
+      "handler": "Cobranzajudicial.contarArchivosClientes",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/cobranzajudicial/:idCliente/empresa/:idEmpresa/descargar-archivos",
+      "handler": "Cobranzajudicial.descargarArchivosClientes",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/cobranzajudicial",
+      "handler": "Cobranzajudicial.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/cobranzajudicial/crearEtapasCobranzaJudicial",
+      "handler": "Cobranzajudicial.CrearEtapasCobranzaJudicial",
+      "config": {
+        "policies": []
+      }
+    },
+    {      
+      "method": "POST",
+      "path": "/cobranzajudicial/guardaCargaBase",
+      "handler": "Cobranzajudicial.guardaCargaBase",
+      "config": {
+        "policies": []
+      }
+    },
+    {      
+      "method": "POST",
+      "path": "/cobranzajudicial/guardaAsignacionAbogado",
+      "handler": "Cobranzajudicial.guardaAsignacionAbogado",
+      "config": {
+        "policies": []
+      }
+    },
+    {      
+      "method": "POST",
+      "path": "/cobranzajudicial/desactivaAsignacionAbogado",
+      "handler": "Cobranzajudicial.desactivaAsignacionAbogado",
+      "config": {
+        "policies": []
+      }
+    },
+    {      
+      "method": "POST",
+      "path": "/cobranzajudicial/guardaSeguimientoEtapas",
+      "handler": "Cobranzajudicial.guardaSeguimientoEtapas",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/cobranzajudicial/editarEtapasCobranzaJudicial/:idEtapa",
+      "handler": "Cobranzajudicial.EditarEtapasCobranzaJudicial",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/cobranzajudicial/:_id",
+      "handler": "Cobranzajudicial.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/cobranzajudicial/actualizarEstatusEtapasCobranzaJudicial/:procesoId",
+      "handler": "Cobranzajudicial.ActualizarEstatusEtapasCobranzaJudicial",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/cobranzajudicials/:_id",
+      "handler": "Cobranzajudicial.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

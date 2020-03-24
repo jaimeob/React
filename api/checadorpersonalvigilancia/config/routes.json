@@ -1,0 +1,100 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/checadorpersonalvigilancias/obtenerAnioNecesidad",
+      "handler": "Checadorpersonalvigilancia.ObtenerAnioNecesidad",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/checadorpersonalvigilancias/obtenerEmpresasNecesidad",
+      "handler": "Checadorpersonalvigilancia.ObtenerEmpresasNecesidad",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/checadorpersonalvigilancias/obtenerPlazas",
+      "handler": "Checadorpersonalvigilancia.ObtenerPlazas",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/checadorpersonalvigilancias/count",
+      "handler": "Checadorpersonalvigilancia.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/checadorpersonalvigilancias/:_id",
+      "handler": "Checadorpersonalvigilancia.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/checadorpersonalvigilancias/obtenerListadoNecesidad/:idEmpresa/:anioRetail",
+      "handler": "Checadorpersonalvigilancia.ObtenerListadoNecesidad",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/checadorpersonalvigilancias/obtenerSemanasCapturaInasistencia/:empresaId/:plazaId",
+      "handler": "Checadorpersonalvigilancia.ObtenerSemanasCapturaInasistencia",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/checadorpersonalvigilancias/obtenerReporteAsistencias/:empresaId/:plazaId/:concentrado/:fechaInicio/:fechaFin",
+      "handler": "Checadorpersonalvigilancia.ObtenerReporteAsistencias",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/checadorpersonalvigilancias/registrarNecesidad/:TipoMovto",
+      "handler": "Checadorpersonalvigilancia.RegistrarNecesidad",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/checadorpersonalvigilancias/grabarCapturaInasistencia",
+      "handler": "Checadorpersonalvigilancia.GrabarCapturaInasistencia",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/checadorpersonalvigilancias/:_id",
+      "handler": "Checadorpersonalvigilancia.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/checadorpersonalvigilancias/:_id",
+      "handler": "Checadorpersonalvigilancia.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

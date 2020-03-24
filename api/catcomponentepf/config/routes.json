@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/catcomponentepfs",
+      "handler": "Catcomponentepf.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/catcomponentepfs/count",
+      "handler": "Catcomponentepf.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/catcomponentepfs/:_id",
+      "handler": "Catcomponentepf.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/catcomponentepfs",
+      "handler": "Catcomponentepf.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/catcomponentepfs/:_id",
+      "handler": "Catcomponentepf.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/catcomponentepfs/:_id",
+      "handler": "Catcomponentepf.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

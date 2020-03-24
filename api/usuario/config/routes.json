@@ -1,0 +1,164 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/usuarios",
+      "handler": "Usuario.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/usuarios/count",
+      "handler": "Usuario.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/usuarios/archivos/",
+      "handler": "Usuario.usuariosArchivosMultiple",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/usuarios/historial/:idUsuario",
+      "handler": "Usuario.obtenerArchivosHistorial",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/usuarios/:_id/archivos",
+      "handler": "Usuario.usuariosArchivos",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/usuarios/:_id/contar-archivos",
+      "handler": "Usuario.usuariosContarArchivos",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/usuarios/consultaOpcionesUsuario/:_id",
+      "handler": "usuario.consultaOpcionesUsuario",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/usuarios/imagen",
+      "handler": "Usuario.imagen",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/usuarios/:idUsuario",
+      "handler": "Usuario.obtenerDetalleUsuario",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/usuarios/login",
+      "handler": "Usuario.login",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/usuarios",
+      "handler": "Usuario.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/usuarios/intentos-login",
+      "handler": "Usuario.intentosLogin",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/usuarios/guardar-funciones-favoritas",
+      "handler": "Usuario.guardarFuncionesFavoritas",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/usuarios/guardarUsuario",
+      "handler": "Usuario.guardarUsuario",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/usuarios/activar",
+      "handler": "Usuario.activar",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/usuarios/desactivar",
+      "handler": "Usuario.desactivar",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/usuarios/:_id",
+      "handler": "Usuario.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/usuarios/activarEmpresas",
+      "handler": "Usuario.activarEmpresas",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/usuarios/desactivarEmpresas",
+      "handler": "Usuario.desactivarEmpresas",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/usuarios/:_id",
+      "handler": "Usuario.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

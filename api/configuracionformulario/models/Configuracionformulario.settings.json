@@ -1,0 +1,43 @@
+{
+  "connection": "default",
+  "collectionName": "configuracionformularios",
+  "info": {
+    "name": "configuracionformulario",
+    "description": "Gestiona la configuración de un formulario dinámico, el cual tiene como nucleo sus componentes configurados. Ver componentesformulario"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "componentesformularios": {
+      "collection": "componentesformulario",
+      "via": "configuracionformulario"
+    },
+    "nombre": {
+      "default": "",
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "departamento": {
+      "model": "departamentos",
+      "via": "configuracionformularios"
+    },
+    "logoUrl": {
+      "default": "",
+      "type": "text"
+    },
+    "fechaPublicacion": {
+      "default": "",
+      "type": "date"
+    },
+    "proyecto": {
+      "model": "proyecto",
+      "via": "configuracionformulario"
+    },
+    "activo": {
+      "default": true,
+      "type": "boolean"
+    }
+  }
+}

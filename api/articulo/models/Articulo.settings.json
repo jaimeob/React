@@ -1,0 +1,39 @@
+{
+  "connection": "default",
+  "collectionName": "articulos",
+  "info": {
+    "name": "articulo",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "nombre": {
+      "default": "",
+      "maxLength": 100,
+      "type": "string",
+      "required": true
+    },
+    "idArticulo": {
+      "default": "",
+      "type": "integer",
+      "required": true
+    },
+    "precio": {
+      "default": 0,
+      "type": "decimal",
+      "required": true
+    },
+    "stockMinimo": {
+      "default": "",
+      "type": "decimal",
+      "required": true
+    },
+    "stockMaximo": {
+      "default": "",
+      "type": "decimal",
+      "required": true
+    }
+  }
+}

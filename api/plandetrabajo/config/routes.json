@@ -1,0 +1,287 @@
+{
+  "routes": [
+    {
+      "method": "POST",
+      "path": "/plandetrabajo/obtenerPlantilla",
+      "handler": "Plandetrabajo.obtenerPlantilla",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/plandetrabajo/invitarAmigo",
+      "handler": "Plandetrabajo.invitarAmigo",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/plandetrabajo/enviarLineaBase",
+      "handler": "Plandetrabajo.enviarLineaBase",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/plandetrabajo/editarLineaBase",
+      "handler": "Plandetrabajo.editarLineaBase",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/plandetrabajo/cancelarCopiaLineaBase",
+      "handler": "Plandetrabajo.cancelarCopiaLineaBase",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/plandetrabajo/obtenerEmpleadosDepartamento",
+      "handler": "Plandetrabajo.obtenerEmpleadosDepartamento",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/plandetrabajo/obtPlantillas/:IdDepartamento",
+      "handler": "Plandetrabajo.obtPlantillas",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/plandetrabajo/obtenerEmpleados",
+      "handler": "Plandetrabajo.obtenerEmpleados",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/plandetrabajo/obtenerEmpleadoPorId/:_id",
+      "handler": "Plandetrabajo.obtenerEmpleadoPorId",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/plandetrabajo/guardarProyecto",
+      "handler": "Plandetrabajo.guardarProyecto",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/plandetrabajo/guardarObservacion",
+      "handler": "Plandetrabajo.guardarObservaciones",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/plandetrabajo/obtenerProyectos/:_id/:_idUser",
+      "handler": "Plandetrabajo.obtenerProyectos",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/plandetrabajo/obtenerProyectosPendientes/:_id",
+      "handler": "Plandetrabajo.obtenerProyectosPendientes",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/plandetrabajo/obtenerAutorizador/:_idDepartamento/:_idPuesto",
+      "handler": "Plandetrabajo.obtenerAutorizador",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/plandetrabajo/obtenerObservaciones/:_idProyecto",
+      "handler": "Plandetrabajo.obtenerObservaciones",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/plandetrabajo/obtenerProyectosPorFecha",
+      "handler": "Plandetrabajo.obtenerProyectosPorFecha",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/plandetrabajo/obtenerProyectosPorFechaPendientes",
+      "handler": "Plandetrabajo.obtenerProyectosPorFechaPendientes",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/plandetrabajo/cambiarProyectoEstatus/:_IdProyecto/:_IdLineaBase/:_IdEstatus",
+      "handler": "Plandetrabajo.cambiarProyectoEstatus",
+      "config": {
+        "policies": []
+      }
+    },
+   
+    {
+      "method": "POST",
+      "path": "/plandetrabajo/obtenerCatalogosPDP",
+      "handler": "Plandetrabajo.obtenerCatalogosPDP",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/plandetrabajo/obtenerEmpleadosPDP",
+      "handler": "Plandetrabajo.obtenerEmpleadosPDP",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/plandetrabajo/guardarLineaBase",
+      "handler": "Plandetrabajo.guardarLineaBase",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/plandetrabajo/cambiarProyectoEstatus/:_IdProyecto/:_IdEstatus",
+      "handler": "Plandetrabajo.cambiarProyectoEstatus",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/plandetrabajo/guardarImpactosDocumentos",
+      "handler": "Plandetrabajo.guardarImpactosDocumentos",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/plandetrabajo/obtenerImpactosDocumentos/:_IdProyecto",
+      "handler": "Plandetrabajo.obtenerImpactosDocumentos",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/plandetrabajo/guardarImpactosRiesgos",
+      "handler": "Plandetrabajo.guardarImpactosRiesgos",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/plandetrabajo/obtenerImpactosRiesgos/:_IdProyecto",
+      "handler": "Plandetrabajo.obtenerImpactosRiesgos",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/plandetrabajo/cambiarEstatusImpactos/:_IdProyecto",
+      "handler": "Plandetrabajo.cambiarEstatusImpactos",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/plandetrabajo/cambiarEstatusProyecto/:_IdProyecto/:Estatus",
+      "handler": "Plandetrabajo.cambiarEstatusProyecto",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/plandetrabajo/obtenerLineasBasesPorProyecto/:_IdProyecto/:IdLineaBaseActiva",
+      "handler": "Plandetrabajo.obtenerLineasBasesPorProyecto",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/plandetrabajo/cambiarEstatusTicket/:IdTicket/:Estatus",
+      "handler": "Plandetrabajo.cambiarEstatusTicket",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/plandetrabajo/cambiarEstatusImpactosDocumentos/:IdImpacto",
+      "handler": "Plandetrabajo.cambiarEstatusImpactosDocumentos",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/plandetrabajo/cambiarEstatusImpactosRiesgos/:IdImpacto",
+      "handler": "Plandetrabajo.cambiarEstatusImpactosRiesgos",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/plandetrabajo/obtenerTicket/:IdTicket",
+      "handler": "Plandetrabajo.obtenerTicket",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/plandetrabajo/obtenerTicketsCancelacion/:IdProyecto",
+      "handler": "Plandetrabajo.obtenerTicketsCancelacion",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/plandetrabajo/obtenerJefeId/:IdPuesto",
+      "handler": "Plandetrabajo.obtenerJefeId",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
+
+

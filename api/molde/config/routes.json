@@ -1,0 +1,363 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/molde/combos",
+      "handler": "Molde.obtenerCombos",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/molde/combosReportes/:_usuarioId",
+      "handler": "Molde.obtenerCombosReportes",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/molde/datosMantenimiento/:_usuarioId",
+      "handler": "Molde.obtenerDatosMantenimiento",
+      "config": {
+        "policies": []
+      }
+    },
+    
+    {
+      "method": "GET",
+      "path": "/molde",
+      "handler": "Molde.obtenerMoldes",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/molde/moldesInexistentes",
+      "handler": "Molde.obtenerMoldesInexistentes",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/molde/plazas",
+      "handler": "Molde.obtenerPlazas",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/molde/plazas",
+      "handler": "Molde.obtenerPlazas",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/molde/estatusInventario",
+      "handler": "Molde.obtenerEstatusInventario",
+      "config": {
+        "policies": []
+      }
+    }, 
+    {
+      "method": "GET",
+      "path": "/molde/movimientos/:_idUsuario",
+      "handler": "Molde.obtenerMovimientos",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/molde/inventariosCicliclos/:_almacen",
+      "handler": "Molde.obtenerInventarioCiclicos",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/molde/evidenciasInventarioCicliclo/:_almacen",
+      "handler": "Molde.obtenerEvidenciasInventariosCiclicos",
+      "config": {
+        "policies": []
+      }
+    },
+    
+    {
+      "method": "GET",
+      "path": "/molde/movimientoDetalle/:_IdMovimiento",
+      "handler": "Molde.obtenerMovimientoDetalle",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/molde/almacenesUsuario/:_usuarioLogeado",
+      "handler": "Molde.obtenerAlmacenesPorUsuario",
+      "config": {
+        "policies": []
+      }
+    },
+    
+    {
+      "method": "GET",
+      "path": "/molde/almacenesPlaza/:_IdPlaza",
+      "handler": "Molde.obtenerAlmacenPlaza",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/molde/moldesAlmacen/:_IdAlmacen",
+      "handler": "Molde.obtenerMoldesAlmacen",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/molde/almacenFechaInicial/:_IdAlmacen",
+      "handler": "Molde.obtenerAlmacenFechaInicial",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/molde/moldesAlmacenReporte/:_IdAlmacen",
+      "handler": "Molde.obtenerMoldesAlmacenReporte",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/molde/origenesAlmacen/:_IdTipoMovimiento",
+      "handler": "Molde.obtenerOrigenesAlmacen",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/molde/tiposMovimientos/:_referencia",
+      "handler": "Molde.obtenerTiposMovimientos",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/molde/detalleInventarioCiclico/:_idInventarioCiclico",
+      "handler": "Molde.obtenerDetalleInventarioCiclico",
+      "config": {
+        "policies": []
+      }
+    },
+    
+    {
+      "method": "POST",
+      "path": "/molde/eliminar",
+      "handler": "Molde.eliminarMolde",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/molde/archivos",
+      "handler": "Molde.guardarArchivosDocumentacion",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/molde/piezasMolde",
+      "handler": "Molde.obtenerPiezasMolde",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/molde/moldesExistentes",
+      "handler": "Molde.obtenerMoldesExistentes",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/molde/insumosExistentes",
+      "handler": "Molde.obtenerInsumosExistentes",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/molde/insumosAlmacen",
+      "handler": "Molde.obtenerInsumosAlmacen",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/molde/reporteInventarios",
+      "handler": "Molde.obtenerReporteInventarios",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/molde/DetalleMantenimientos",
+      "handler": "Molde.obtenerDetalleMantenimientos",
+      "config": {
+        "policies": []
+      }
+    },
+    
+    {
+      "method": "POST",
+      "path": "/molde/aniosAlmacen",
+      "handler": "Molde.obtenerAniosAlmacen",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/molde/periodosAlmacen",
+      "handler": "Molde.obtenerPeriodosAlmacen",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/molde/reporteKardexInventario",
+      "handler": "Molde.obtenerReporteKardexInventario",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/molde/reporteConfiabilidadInventario",
+      "handler": "Molde.obtenerReporteConfiabilidadInventario",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/molde/accesoriosMolde",
+      "handler": "Molde.obtenerAccesoriosMolde",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/molde/nuevoMovimiento",
+      "handler": "Molde.guardarNuevoMovimiento",
+      "config": {
+        "policies": []
+      }
+    },
+    
+    {
+      "method": "GET",
+      "path": "/molde/obtenerTablasMovimiento/:_IdMovimiento",
+      "handler": "Molde.obtenerTablasMovimiento",
+      "config": {
+        "policies": []
+      }
+    },
+
+    {
+      "method": "POST",
+      "path": "/molde/archivos/eliminar",
+      "handler": "Molde.eliminarArchivosDocumentacion",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/molde/datosFolio",
+      "handler": "Molde.obtenerDatosFolio",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/molde/almacenesPlazaUsuario",
+      "handler": "Molde.obtenerAlmacenesPlazaUsuario",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/molde",
+      "handler": "Molde.guardarConfiguracionMolde",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/molde/guardarInventarioCiclico",
+      "handler": "Molde.guardarInventarioCiclico",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/molde/archivosEvidencia",
+      "handler": "Molde.guardarArchivosEvidencia",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/molde/plazasUsuario",
+      "handler": "Molde.plazasUsuario",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/molde/cambiarResultados",
+      "handler": "Molde.cambiarResultadosInventario",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/molde/eliminarArchivoEvidencia",
+      "handler": "Molde.eliminarArchivoEvidencia",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

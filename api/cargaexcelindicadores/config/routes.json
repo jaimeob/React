@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/cargaexcelindicadores/obtenerLayoutCargaBase/:tipoCargaId",
+      "handler": "Cargaexcelindicadores.obtenerLayoutCargaBase",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/cargaexcelindicadores/obtenerListadoCargas/:tipoCargaId/:empresaId/:anio/:plazaId",
+      "handler": "Cargaexcelindicadores.ObtenerListadoCargas",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/cargaexcelindicadores/grabarCargaIndicadores/:tipoCargaId/:empresaId",
+      "handler": "Cargaexcelindicadores.GrabarCargaIndicadores",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

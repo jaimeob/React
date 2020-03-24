@@ -1,0 +1,68 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/componentesformularios",
+      "handler": "Componentesformulario.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/componentesformularios/count",
+      "handler": "Componentesformulario.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/componentesformularios/cgformulario/:_id",
+      "handler": "Componentesformulario.findBycfgFormulario",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/componentesformularios/:_id",
+      "handler": "Componentesformulario.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/componentesformularios",
+      "handler": "Componentesformulario.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/componentesformularios/:_id",
+      "handler": "Componentesformulario.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/componentesformularios/configuracionfrm/:_id",
+      "handler": "Componentesformulario.destroyAll",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/componentesformularios/:_id",
+      "handler": "Componentesformulario.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "connection": "default",
+  "collectionName": "CobranzaJudicial",
+  "info": {
+    "name": "cobranzajudicial",
+    "description": "Cobranza Judicial"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "id_cobranza": {
+      "default": 0,
+      "type": "integer"
+    }
+  }
+}

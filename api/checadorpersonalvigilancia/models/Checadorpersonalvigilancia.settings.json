@@ -1,0 +1,17 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "checadorpersonalvigilancia",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "ID": {
+      "default": 0,
+      "type": "integer"
+    }
+  }
+}

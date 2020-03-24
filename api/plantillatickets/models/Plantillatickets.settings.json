@@ -1,0 +1,56 @@
+{
+  "connection": "default",
+  "collectionName": "plantillatickets",
+  "info": {
+    "name": "plantillatickets",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "nombre": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "tipostickets": {
+      "model": "tipostickets",
+      "via": "plantillaTickets"
+    },
+    "departamentos": {
+      "model": "departamentos",
+      "via": "plantillatickets"
+    },
+    "empleados": {
+      "model": "empleados",
+      "via": "plantillaTickets",
+      "required": false
+    },
+    "tiempoRespuesta": {
+      "default": "",
+      "type": "integer"
+    },
+    "cierreRespuesta": {
+      "default": "",
+      "type": "integer"
+    },
+    "estatus": {
+      "default": false,
+      "type": "boolean",
+      "required": true
+    },
+    "tipoForma": {
+      "default": "",
+      "type": "json"
+    },
+    "tipoTiempoRespuesta": {
+      "default": "",
+      "type": "string"
+    },
+    "tipoCierreRespuesta": {
+      "default": "",
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/puestos",
+      "handler": "Puestos.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/puestos/count",
+      "handler": "Puestos.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/puestos/roles",
+      "handler": "Puestos.puestosRoles",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/puestos/roles/archivos/",
+      "handler": "Puestos.puestosRolesArchivosMultiple",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/puestos/:_id/roles/archivos",
+      "handler": "Puestos.puestosRolesArchivos",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/puestos/:_id/contar-archivos",
+      "handler": "Puestos.puestosRolesContarArchivos",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/puestos/conrol",
+      "handler": "Puestos.obtenerPuestosConRol",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/puestos/:_id",
+      "handler": "Puestos.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/puestos",
+      "handler": "Puestos.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/puestos/roles/activar",
+      "handler": "Puestos.activar",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/puestos/roles/desactivar",
+      "handler": "Puestos.desactivar",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/puestos/:_id",
+      "handler": "Puestos.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/puestos/:_id",
+      "handler": "Puestos.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

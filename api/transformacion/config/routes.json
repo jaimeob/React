@@ -1,0 +1,132 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/transformaciones",
+      "handler": "Transformacion.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/movimientos/transformaciones",
+      "handler": "Transformacion.movimientosTransformaciones",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/transformaciones/moldes/:_id/destino",
+      "handler": "Transformacion.moldesDestino",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/movimientos/transformaciones/:_id/detalle",
+      "handler": "Transformacion.movimientoDetalle",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/moldes",
+      "handler": "Transformacion.moldes",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/moldes/:_id/secciones",
+      "handler": "Transformacion.secciones",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/moldes/:_id/piezas",
+      "handler": "Transformacion.piezas",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/transformaciones/count",
+      "handler": "Transformacion.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/transformaciones/:_id",
+      "handler": "Transformacion.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/transformaciones",
+      "handler": "Transformacion.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/transformaciones/devolver",
+      "handler": "Transformacion.devolverTransformacion",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/movimiento/transformaciones",
+      "handler": "Transformacion.movimientoTransformacion",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/insumos/transformaciones",
+      "handler": "Transformacion.insumos",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/transformaciones/:_id",
+      "handler": "Transformacion.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/transformaciones/eliminar/:_id",
+      "handler": "Transformacion.eliminar",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/transformaciones/:_id",
+      "handler": "Transformacion.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

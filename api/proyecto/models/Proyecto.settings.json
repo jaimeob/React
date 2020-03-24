@@ -1,0 +1,38 @@
+{
+  "connection": "default",
+  "collectionName": "proyectos",
+  "info": {
+    "name": "proyecto",
+    "description": "Gestiona los proyectos de software"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "nombre": {
+      "default": "",
+      "maxLength": 100,
+      "type": "string",
+      "required": true
+    },
+    "activo": {
+      "default": true,
+      "type": "boolean",
+      "required": true
+    },
+    "tiposcomponentes": {
+      "collection": "tiposcomponente",
+      "via": "proyecto"
+    },
+    "clave": {
+      "default": "CLV",
+      "unique": true,
+      "type": "string",
+      "required": true
+    },
+    "configuracionformulario": {
+      "collection": "configuracionformulario",
+      "via": "proyecto"
+    }
+  }
+}

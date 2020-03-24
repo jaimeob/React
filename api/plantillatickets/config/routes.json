@@ -1,0 +1,132 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/plantillatickets",
+      "handler": "Plantillatickets.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/plantillatickets/verPlantilla/:_id",
+      "handler": "Plantillatickets.verPlantilla",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/plantillatickets/count",
+      "handler": "Plantillatickets.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/plantillatickets/obtenerEtapa/:_id",
+      "handler": "Plantillatickets.obtenerEtapa",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/plantillatickets/etapas/:idPlantilla",
+      "handler": "Plantillatickets.obtenerPlazas",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/plantillatickets/etapas/:idPlantilla/:idPlaza/:band?",
+      "handler": "Plantillatickets.obtenerEtapas",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/plantillatickets/:_id",
+      "handler": "Plantillatickets.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/plantillatickets/obtenerNumeroDePuestos/:_id",
+      "handler": "Plantillatickets.obtenerNumeroDePuestos",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/plantillatickets",
+      "handler": "Plantillatickets.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/plantillatickets/enviar",
+      "handler": "Plantillatickets.enviar",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/plantillatickets/estatus",
+      "handler": "Plantillatickets.eliminarPlantillaTickets",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/plantillatickets/etapas/estatus",
+      "handler": "Plantillatickets.eliminarEtapa",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/plantillatickets/plazas/estatus",
+      "handler": "Plantillatickets.eliminarPlaza",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/plantillatickets/:_id",
+      "handler": "Plantillatickets.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/plantillatickets/:_id",
+      "handler": "Plantillatickets.destroy",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/plantillatickets/cambiarEstatusEtapasPlantillas/:IdEtapa",
+      "handler": "Plantillatickets.cambiarEstatusEtapasPlantillas",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

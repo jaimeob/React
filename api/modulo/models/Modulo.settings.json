@@ -1,0 +1,29 @@
+{
+  "connection": "default",
+  "collectionName": "Modulos",
+  "info": {
+    "name": "modulo",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "ModuloId": {
+      "default": "",
+      "type": "integer"
+    },
+    "NombreModulo": {
+      "default": "",
+      "type": "string"
+    },
+    "Descripcion": {
+      "default": "",
+      "type": "text"
+    },
+    "Activo": {
+      "default": "",
+      "type": "integer"
+    }
+  }
+}

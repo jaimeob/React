@@ -1,0 +1,17 @@
+{
+  "connection": "default",
+  "collectionName": "Cargaexcelindicadores",
+  "info": {
+    "name": "cargaexcelindicadores",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "id_modulo": {
+      "default": "",
+      "type": "integer"
+    }
+  }
+}

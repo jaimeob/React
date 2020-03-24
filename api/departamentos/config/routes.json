@@ -1,0 +1,156 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/departamentos",
+      "handler": "Departamentos.obtenerTodosDepartamentos",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/departamentos/rd",
+      "handler": "Departamentos.rdFind",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/departamentos/obtenerconformularios",
+      "handler": "Departamentos.obtenerconformularios",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/departamentos/plantillatickets",
+      "handler": "Departamentos.obtenerDepartamentos",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/departamentos/plantillasFormularios/:usuario",
+      "handler": "Departamentos.obtenerDepartamentoPlantillasFormularios",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/departamentos/usuariosEnviados/:departamentoId",
+      "handler": "Departamentos.obtenerUsuariosEnviadosDepartamentoSQL",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/departamentos/usuarios/:_id",
+      "handler": "Departamentos.obtenerUsuariosDepartamento",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/departamentos/empleados/:_id",
+      "handler": "Departamentos.obtenerDepartamentoEmpleados",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/departamentos/plantillatickets/:_id",
+      "handler": "Departamentos.obtenerDepartamentoPlantillas",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/departamentos/formulariosAsignados/:departamentoId",
+      "handler": "Departamentos.obtenerFormulariosAsignados",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/departamentos/formulariosAsignados/:departamentoId/:configFormularioId",
+      "handler": "Departamentos.obtenerFormulariosAsignados",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/departamentos/formulariosAsignadosEmpleado/:noEmpleado",
+      "handler": "Departamentos.obtenerFormulariosAsignados",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/departamentos/formulariosAsignadosEmpleado/:noEmpleado/:estado",
+      "handler": "Departamentos.obtenerFormulariosAsignados",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/departamentos/formulariosAsignadosEmpleado/:departamentoId/:noEmpleado/:estado",
+      "handler": "Departamentos.obtenerFormulariosAsignados",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/departamentos/count",
+      "handler": "Departamentos.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/departamentos/:_id",
+      "handler": "Departamentos.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/departamentos",
+      "handler": "Departamentos.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/departamentos/:_id",
+      "handler": "Departamentos.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/departamentos/:_id",
+      "handler": "Departamentos.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

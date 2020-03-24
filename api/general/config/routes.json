@@ -1,0 +1,84 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/generals/obtenerPlazasGeneral/:_IdPlaza",
+      "handler": "General.obtenerPlazasGeneral",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/generals/obtenerFechaHora",
+      "handler": "General.obtenerFechaHora",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/puestos",
+      "handler": "General.obtenerPuestos",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rol",
+      "handler": "General.obtenerRoles",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/puestos/sinrol",
+      "handler": "General.obtenerPuestosSinRol",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/permisos/modulos/:idModulo/funciones/:funcionId/usuarios/:idUsuario/rol-empresa/:idRolEmpresa",
+      "handler": "General.obtenerPermisos",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/general/departamento/puestos/:idDepartamento",
+      "handler": "General.obtenerDepartamentoPuestos",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/generals/obtenerSemMesRetail/:year/:periodicity/:period",
+      "handler": "General.obtenerSemMesRetail",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/generals/obtenerPlazasUsuario/:idUser",
+      "handler": "General.obtenerPlazasUsuario",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/general/puestos/empleados/:idPuesto",
+      "handler": "General.obtenerPuestoEmpleados",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

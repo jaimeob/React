@@ -1,0 +1,19 @@
+{
+  "connection": "default",
+  "collectionName": "MovimientoInventario",
+  "info": {
+    "name": "movimientoinventario",
+    "description": "Tabla de MovimientosInventario"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "IdMovimiento": {
+      "default": "",
+      "unique": true,
+      "type": "integer",
+      "required": true
+    }
+  }
+}

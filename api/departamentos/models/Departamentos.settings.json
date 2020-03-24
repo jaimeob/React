@@ -1,0 +1,54 @@
+{
+  "connection": "default",
+  "collectionName": "departamentos",
+  "info": {
+    "name": "departamentos",
+    "description": "Catalogo de Departamentos"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "departamentoId": {
+      "default": "",
+      "unique": true,
+      "type": "integer",
+      "required": true
+    },
+    "nombre": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "estatus": {
+      "default": false,
+      "type": "boolean",
+      "required": true
+    },
+    "puestos": {
+      "collection": "puestos",
+      "via": "departamentos",
+      "private": true
+    },
+    "plantillatickets": {
+      "collection": "plantillatickets",
+      "via": "departamentos"
+    },
+    "empleados": {
+      "collection": "empleados",
+      "via": "departamentos"
+    },
+    "tickets": {
+      "collection": "tickets",
+      "via": "departamentos"
+    },
+    "plantillaformularios": {
+      "collection": "plantillaformulario",
+      "via": "departamentos"
+    },
+    "configuracionformularios": {
+      "collection": "configuracionformulario",
+      "via": "departamento"
+    }
+  }
+}

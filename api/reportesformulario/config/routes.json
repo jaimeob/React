@@ -1,0 +1,76 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/reportesformularios",
+      "handler": "Reportesformulario.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/reportesformularios/count",
+      "handler": "Reportesformulario.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/reportesformularios/obtener-reportes-encuestas",
+      "handler": "Reportesformulario.obtenerReportesEncuestas",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/reportesformularios/obtener-validaciones-formularios",
+      "handler": "Reportesformulario.obtenerValidacionesFormularios",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/reportesformularios/obtener-reportes-encuestas/:id",
+      "handler": "Reportesformulario.obtenerReporteEncuesta",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/reportesformularios/:_id",
+      "handler": "Reportesformulario.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/reportesformularios",
+      "handler": "Reportesformulario.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/reportesformularios/:_id",
+      "handler": "Reportesformulario.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/reportesformularios/:_id",
+      "handler": "Reportesformulario.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

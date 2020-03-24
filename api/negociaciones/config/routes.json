@@ -1,0 +1,246 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/negociaciones",
+      "handler": "Negociaciones.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/negociaciones/count",
+      "handler": "Negociaciones.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+
+      "path": "/negociaciones/ObtenerAniosPorcentajeImpacto",
+      "handler": "Negociaciones.obtenerAniosPorcentajeImpacto",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/negociaciones/:_id",
+      "handler": "Negociaciones.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/negociaciones/obtenerLayoutNegociaciones/:_idPrototipo",
+      "handler": "Negociaciones.obtenerLayoutNegociaciones",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+
+      "path": "/negociaciones/ObtenerFamilias/:estatus",
+      "handler": "Negociaciones.obtenerFamilias",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/negociaciones/obtenerExplosiones/:idExplosion/:idPlaza/:anio",
+      "handler": "Negociaciones.obtenerExplosiones",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/negociaciones/ObtenerSubFamilias/:id",
+      "handler": "Negociaciones.obtenerSubFamilias",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/negociaciones/obtenerExplosionesDetalle/:_idExplosion",
+      "handler": "Negociaciones.obtenerExplosionesDetalle",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/negociaciones/ObtenerPorcentajeImpactoXAnio/:anio",
+      "handler": "Negociaciones.obtenerPorcentajeImpactoXAnio",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+
+      "path": "/negociaciones/ObtenerMetaPorcentajeAhorro/:anio",
+      "handler": "Negociaciones.obtenerMetaPorcentajeAhorro",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+
+      "path": "/negociaciones/ObtenerDatosGeneralesImpacto/:anio",
+      "handler": "Negociaciones.obtenerDatosGeneralesImpacto",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+
+      "path": "/negociaciones/ObtenerDetalleImpacto/:anio/:idFamilia",
+      "handler": "Negociaciones.obtenerDetalleImpacto",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+
+      "path": "/negociaciones/ObtenerPorcentajeAhorroPlazas/:fechainicio/:fechafin",
+      "handler": "Negociaciones.obtenerPorcentajeAhorroPlazas",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+
+      "path": "/negociaciones/obtenerMetaDiasPromedio/:anio",
+      "handler": "Negociaciones.obtenerMetaDiasPromedio",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+
+      "path": "/negociaciones/obtenerListadoDiasPromedio/:fechainicio/:fechafin",
+      "handler": "Negociaciones.obtenerListadoDiasPromedio",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+
+      "path": "/negociaciones/ObtenerDiasPromedioDetalleXEmpleado/:fechainicio/:fechafin/:idEmpleado",
+      "handler": "Negociaciones.obtenerDiasPromedioDetalleXEmpleado",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/negociaciones/obtenerMontoNegociado/:PlazaId/:FamiliaId",
+      "handler": "Negociaciones.obtenerMontoNegociado",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/negociaciones/obtenerPorcentajeCumplimiento/:PlazaId/:InitialDate/:FinalDate",
+      "handler": "Negociaciones.obtenerPorcentajeCumplimiento",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/negociaciones/obtenerDepartamentoPuestoFamilia/:IdDepartamento/:IdFamilia",
+      "handler": "Negociaciones.obtenerDepartamentoPuestoFamilia",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+
+      "path": "/negociaciones",
+      "handler": "Negociaciones.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/negociaciones/obtenerDetalleInsumo",
+      "handler": "Negociaciones.obtenerDetalleInsumo",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/negociaciones/agregarExplosion",
+      "handler": "Negociaciones.agregarExplosion",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/negociaciones/agregarPuestoFamilia/:IdFamilia",
+      "handler": "Negociaciones.agregarPuestoFamilia",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/negociaciones/guardarPuestoFamilia/:IdFamilia",
+      "handler": "Negociaciones.guardarPuestoFamilia",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/negociaciones/:_id",
+      "handler": "Negociaciones.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/negociaciones/AsignarSubfamilias/:IdFamilia/:NombreFamilia/:Empleado",
+      "handler": "Negociaciones.asignarsubfamilias",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/negociaciones/ActualizarEstatusFamilias/:estatus",
+      "handler": "Negociaciones.actualizarEstatusFamilias",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/negociaciones/:_id",
+      "handler": "Negociaciones.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
