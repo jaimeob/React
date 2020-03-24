@@ -1,0 +1,38 @@
+
+#paperTablaSencilla::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+ /* Estilos barra (thumb) de scroll */
+#paperTablaSencilla::-webkit-scrollbar-thumb {
+  background: rgb(206, 206, 206);
+  border-radius: 4px;
+}
+
+#paperTablaSencilla::-webkit-scrollbar-thumb:active {
+  background-color: #999999;
+}
+
+#paperTablaSencilla::-webkit-scrollbar-thumb:hover {
+  background: rgb(160, 160, 160);
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+ /* Estilos track de scroll */
+#paperTablaSencilla::-webkit-scrollbar-track {
+  background: #ffffff;
+  opacity: 0;
+  border-radius: 4px;
+}
+
+#paperTablaSencilla::-webkit-scrollbar-track:hover, 
+#paperTablaSencilla::-webkit-scrollbar-track:active {
+  background: #ffffff;
+  opacity: 0;
+}
+
+#tablaSencilla > thead > tr > th:first-child,
+#tablaSencilla > tbody > tr > td:first-child {
+  padding: 4px 56px 4px 24px !important;
+}

@@ -1,0 +1,53 @@
+.MuiInputBase-disabled-337{
+    color:'#797878' !important;
+}
+.MuiInputBase-disabled-1032{
+    color: black !important;
+}
+
+.MuiInputBase-root-1517 .MuiInputBase-disabled-1520{
+    color: black !important;
+    opacity: 1 !important;
+}
+
+.MuiInputBase-root-1517{
+    color: black !important;
+    opacity: 1 !important;
+}
+.MuiInputBase-disabled-1520{
+    color: black !important;
+    opacity: 1 !important;
+}
+
+.MuiInputBase-root .MuiInputBase-disabled{
+    color: black !important;
+    opacity: 1 !important;
+}
+
+.sinDeshabilitar{
+    color: black !important;
+}
+.MuiButton-disabled-200{
+    /* color: black !important; */
+}
+
+.MuiButtonBase-disabled-87{
+    /* color: black !important; */
+}
+
+.botonAsignar{
+    color: white !important;
+    font-size: 10px;
+    text-transform: capitalize;
+}
+
+.botonRecuro{ 
+    font-size: 10px !important;
+    text-transform: capitalize !important;
+}
+
+.botonRecuro:disabled{ 
+    color: black !important;
+    font-size: 10px;
+    text-transform: capitalize;
+}

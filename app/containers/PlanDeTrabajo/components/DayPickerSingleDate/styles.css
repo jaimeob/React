@@ -1,0 +1,49 @@
+
+.DateInput{
+    width: 100px !important;
+}
+
+.DateInput_input .DateInput_input_1{
+    font-size: 12px !important;
+    font-weight: 360 !important;
+}
+
+.SingleDatePickerInput__disabled{
+    background-color: #ffffff !important;
+    color: black;
+}
+
+.SingleDatePickerInput__disabled_2{
+    background-color: #ffffff !important;
+}
+.MuiInputBase-root-694.MuiInputBase-disabled-697{
+    color: black !important;
+}
+.MuiInputBase-disabled-697{
+    opacity: 1 !important;
+}
+.DateInput_input__disabled {
+    background-color: #ffffff !important;
+    font-style: normal !important;
+    color: black !important;
+}
+.DateInput__disabled_2{
+    background-color: black !important;
+    /* font-style: normal !important; */
+}
+
+.justificacion {
+    display: flex;
+    float: left;
+    padding: 0;
+    margin: 0;
+    list-style: none;   
+}
+
+.center{
+    align-items: center; 
+}
+
+.datepicker{
+    font-weight: bold;
+}

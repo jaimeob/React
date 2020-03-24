@@ -1,0 +1,2 @@
+
+Aqui serán situados los componentes que formen parte del tipo de "Procesos" para el módulo de "Negociaciones"

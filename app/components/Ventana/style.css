@@ -1,0 +1,33 @@
+
+#bodyVentana::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+ /* Estilos barra (thumb) de scroll */
+#bodyVentana::-webkit-scrollbar-thumb {
+  background: rgb(206, 206, 206);
+  border-radius: 4px;
+}
+
+#bodyVentana::-webkit-scrollbar-thumb:active {
+  background-color: #999999;
+}
+
+#bodyVentana::-webkit-scrollbar-thumb:hover {
+  background: rgb(160, 160, 160);
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+ /* Estilos track de scroll */
+#bodyVentana::-webkit-scrollbar-track {
+  background: #ffffff;
+  opacity: 0;
+  border-radius: 4px;
+}
+
+#bodyVentana::-webkit-scrollbar-track:hover, 
+#bodyVentana::-webkit-scrollbar-track:active {
+  background: #ffffff;
+  opacity: 0;
+}

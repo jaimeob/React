@@ -1,0 +1,21 @@
+.DateRangePicker_picker, .SingleDatePicker_picker {
+    z-index: 1002;
+    pointer-events: all;
+}
+.DateRangePicker, .DateRangePickerInput {
+    width: 100%;
+}
+.DateInput_input__small {
+    font-size: 14px
+}
+.DateRangePickerInput__withBorder{
+    border: 0;
+    border-bottom: 1px solid #9e9595;
+}
+.tether-element {
+    z-index: 1001;
+    pointer-events: none;
+}
+.DateRangePickerInput_calendarIcon {
+    padding: 0;
+}

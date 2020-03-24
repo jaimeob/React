@@ -1,0 +1,19 @@
+.justificacion {
+    display: flex;
+    float: left;
+    padding: 0;
+    margin: 0;
+    list-style: none;   
+}
+
+.center{
+    align-items: center; 
+}
+
+.MuiDialog-paperWidthSm-620{
+    min-width: 450px;
+}
+
+#alert-dialog-slide-description{
+    font-size: 23px;
+}

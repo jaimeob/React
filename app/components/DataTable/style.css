@@ -1,0 +1,35 @@
+.DataTableopciones {
+  opacity: 0;
+}
+
+#PaperMuiDatatable > div > div:nth-child(3)::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+  /* Estilos barra (thumb) de scroll */
+#PaperMuiDatatable > div > div:nth-child(3)::-webkit-scrollbar-thumb {
+  background: rgb(206, 206, 206);
+  border-radius: 4px;
+}
+
+#PaperMuiDatatable > div > div:nth-child(3)::-webkit-scrollbar-thumb:active {
+  background-color: #999999;  
+}
+
+#PaperMuiDatatable > div > div:nth-child(3)::-webkit-scrollbar-thumb:hover {
+  background: rgb(160, 160, 160);
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos track de scroll */
+#PaperMuiDatatable > div > div:nth-child(3)::-webkit-scrollbar-track {
+  background: #ffffff;
+  opacity: 0;
+  border-radius: 4px;
+}
+
+#PaperMuiDatatable > div > div:nth-child(3)::-webkit-scrollbar-track:hover, 
+#PaperMuiDatatable > div > div:nth-child(3)::-webkit-scrollbar-track:active {
+  background: #ffffff;
+  opacity: 0;
+}

@@ -1,0 +1,37 @@
+.campana {
+    width: 100px;
+    height: 100px;
+  }
+
+   /* width */
+   ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background-color:  #fafafa;; 
+  /* border-radius: 10px; */
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #cecece; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #cecece; 
+  }
+
+  
+/*   
+  button {
+    display: block;
+    height: 30px;
+    width: 100px;
+    font-size: 15px;
+    margin-top: 20px;
+  }
+   */

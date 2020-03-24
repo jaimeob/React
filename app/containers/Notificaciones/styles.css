@@ -1,0 +1,20 @@
+.box {
+    display: block;
+    width: 100px;
+    height: 100px;
+    background: #27253f;
+    border-radius: 10px;
+  }
+  
+.root {
+      position: "absolute";
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      overflow: "hidden";
+    }
+.Notificacion {
+      margin-top: 84px;
+      color:'red';
+}

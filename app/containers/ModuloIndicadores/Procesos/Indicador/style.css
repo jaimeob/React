@@ -1,0 +1,60 @@
+
+#paperIndicador::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+ /* Estilos barra (thumb) de scroll */
+#paperIndicador::-webkit-scrollbar-thumb {
+  background: rgb(206, 206, 206);
+  border-radius: 4px;
+}
+
+#paperIndicador::-webkit-scrollbar-thumb:active {
+  background-color: #999999;
+}
+
+#paperIndicador::-webkit-scrollbar-thumb:hover {
+  background: rgb(160, 160, 160);
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+ /* Estilos track de scroll */
+#paperIndicador::-webkit-scrollbar-track {
+  background: #ffffff;
+  opacity: 0;
+  border-radius: 4px;
+}
+
+#paperIndicador::-webkit-scrollbar-track:hover, 
+#paperIndicador::-webkit-scrollbar-track:active {
+  background: #ffffff;
+  opacity: 0;
+}
+
+@media print {
+  #containerPDF{
+    padding: 12px !important;
+  }
+}
+
+@page{
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#tablaCuantitativosInd > tbody > tr > td:nth-child(2){
+  text-align: left !important;
+}
+#tablaCualitativosInd > tbody > tr > td:nth-child(2){
+  text-align: left !important;
+}
+
+#tablaCuantitativosInd > thead > tr > th:first-child{
+  padding-left: 16px !important;
+}
+#tablaCualitativosInd > thead > tr > th:first-child{
+  padding-left: 16px !important;
+}

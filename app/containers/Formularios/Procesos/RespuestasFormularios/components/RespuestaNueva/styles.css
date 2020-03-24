@@ -1,0 +1,52 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+
+.icon {
+    font-family: "Material Icons", serif;
+    font-style: normal;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "liga";
+  }
+
+.pestaña{
+  -webkit-box-flex: 1;
+	 box-flex: 1;
+	-webkit-flex-grow: 1;
+	flex-grow: 1;
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+	position: relative;
+}
+.letras {
+  -webkit-font-smoothing: antialiased;
+}
+
+  /* .alert-enter {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  .alert-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 300ms, transform 300ms;
+  }
+  .alert-exit {
+    opacity: 1;
+  }
+  .alert-exit-active {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 300ms, transform 300ms; */
+  /* } */
+  

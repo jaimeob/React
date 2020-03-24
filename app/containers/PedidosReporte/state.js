@@ -1,0 +1,37 @@
+export default {
+  coorporativo: {
+    datos: [],
+    cabeceras: [],
+  },
+  reporte: {
+    parametros: {
+      fecSolicitudInicio: null,
+      fecSolicitudFin: null,
+      fecAutorizacionInicio: null,
+      fecAutorizacionFin: null,
+      fechaSolicitudInput: null,
+      fechaAutorizacionInput: null,
+      plazaSeleccionada: [],
+      agrupadorSeleccionado: [],
+      indicesPlazasReporte: [],
+      indicesAgrupadorReporte: [],
+      agrupador: [],
+    },
+    reporteDatos: [],
+    reporteCabeceras: [],
+    hayDatos: false,
+  },
+  plaza: {
+    datos: [],
+    cabeceras: [],
+  },
+  agrupadorSeleccionado: [],
+  indicesAgrupadores: [],
+  limpio: false,
+  plazas: [],
+  agrupadores: [],
+  plazaSeleccionada: [],
+  indicesPlazas: [],
+  stepper: 0,
+  idPlaza: 9,
+}
